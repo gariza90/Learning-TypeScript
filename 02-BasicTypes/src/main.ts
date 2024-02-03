@@ -2,36 +2,50 @@
   Channel: Dave Gray
   Video: TypeScript Full Course for Beginners | Complete All-in-One Tutorial | 8 Hours
   Link: https://www.youtube.com/watch?v=gieEQFIfgYc&t=1539s
-  */
+*/
 
 /*
- - TypeScript => Strongly Typed Language
- - JavaScript => Loosely Typed Language, aka Weakly Typed
- - Static Typing != Strongly Typed, Dynamic Typing != Loosely Typed
- - A language that is strongly typed can be either statically or dynamically typed!
- - TypeScript is a statically typed language. This means types are checked at compile time
- - JavaScript is a dynamically typed language. This means types are checked at run time
- - Benefits of TypeScript: Self documenting, Catch errors in dev, Great for teams
- */
+  - TypeScript => Lenguaje fuertemente tipado
+  - JavaScript => Lenguaje debilmente tipado
+  - Tipado estático != Tipado fuerte, y el Tipado dinámico != Tipado debil
+  - Un lenguaje que es fuertemente tipado puede ser de tipado estático como dinámico!
+  - TypeScript es un lenguaje de tipado estático. Significa que los tipos son analizados en tiempo de compilación
+  - JavaScript es un lenguaje de tipado dinámico. Significa que los tipos son analizados en tiempo de ejecución
+  - Beneficios de TypeScript: Auto documentado, Captura de errores en el desarrollo, Ideal para equipos de desarrollo
+*/
 
 let myName: string;
 let meaningOfLife: number;
 let isLoading: boolean;
-let anyType: any;
-let album: string | number; // Un tipo u otro
+let anyType: any;  // Cualquier tipo de dato
+// Operador de unión | o pipe
+// Union de tipos, similar a OR lógico
+let album: string | number;
 
-//myName = 56; // Error de tipo
 myName = "Giovanny";
 meaningOfLife = 42;
 isLoading = true;
-anyType: true; // Cualquier tipo de dato
+anyType: true;
 album = "Van Halen";
 
+// TypeScript infiere el tipo retornado por la función
 const sum = (a: number, b: string) => {
   return a + b;
 }
 
+// Union de tipos, similar a OR lógico
 let postId: string | number;
 let isActive: number | boolean;
 
+// Tipo de dato RegExp
 let re: RegExp = /\w+/g;
+
+/*
+  Channel: El Camino Dev
+  Video: Curso de TypeScript Gratis - Aprende los conceptos básicos de TypeScript
+  Link: https://youtu.be/ll80pcKPJ2Y?si=rLRGNy3xPxGfI011
+*/
+
+// Otros tipos numéricos
+const color: number = 0xff00;
+const bin: number = 0b00110011;

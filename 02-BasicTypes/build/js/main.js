@@ -15,3 +15,5 @@ const sum = (a, b) => {
 let postId;
 let isActive;
 let re = /\w+/g;
+const color = 0xff00;
+const bin = 0b00110011;

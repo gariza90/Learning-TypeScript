@@ -2,16 +2,19 @@
 let strArray = ["Hey", "One", "Giovanny"];
 let guitars = ["Strat", "Les Paul", 5150];
 let mixedData = ["EVH", 1984, true];
+let test = [];
 strArray[0] = "John";
 strArray.push("Hello");
 guitars.unshift("Jim");
-let test = [];
+let anything;
 let bands = [];
+let bass;
 bands.push("Van Halen");
 let myTuple = ["Dave", 42, true];
 let mixed = ["John", 1, false];
 mixed = myTuple;
 myTuple[1] = 56;
+console.log(myTuple);
 let myObj;
 myObj = [];
 console.log(typeof myObj);
@@ -50,3 +53,14 @@ var Grade;
     Grade[Grade["A"] = 5] = "A";
 })(Grade || (Grade = {}));
 console.log(Grade.A);
+const customer = {
+    name: "Giovanny",
+    age: 45,
+};
+var colors;
+(function (colors) {
+    colors["red"] = "#ff0000";
+    colors["green"] = "#00ff00";
+    colors["blue"] = "#0000ff";
+})(colors || (colors = {}));
+console.log(colors.blue);

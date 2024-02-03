@@ -57,3 +57,26 @@ const numberOrString = (value) => {
         return "number";
     return createError("This should never happen!");
 };
+function CalculateRectArea(base, height) {
+    return base * height;
+}
+function printArea(result) {
+    console.log(`Result: ${result}`);
+}
+let calculator;
+calculator = CalculateRectArea;
+calculator = printArea;
+console.log(calculator(2, 10));
+let scientificCalculator;
+scientificCalculator = CalculateRectArea;
+console.log(scientificCalculator(4, 13));
+function process(n1, n2, callback) {
+    const result = n1 + n2;
+    callback(result);
+}
+process(10, 10, (x) => console.log(x));
+let userInput = 4;
+userInput = true;
+if (typeof userInput === "number") {
+    const number1 = userInput;
+}
